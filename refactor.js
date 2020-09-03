@@ -159,10 +159,11 @@ var spanishColor = function(colorName) {
 // Break it up so that the declaration and
 // assignment are happening on 2 seperate lines.
 
-var foo = "bar";
+//var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo;
+foo = "bar";
 
 // -----------------------------------------------
 
@@ -178,13 +179,17 @@ var foo = "bar";
 // to specify a number of times to call the given
 // function.
 
-var callTenTimes = function(callback) {
-  var range = Array.from(Array(10).keys());
-  range.forEach(callback);
-};
+// var callTenTimes = function(callback) {
+//   var range = Array.from(Array(10).keys());
+//   range.forEach(callback);
+// };
 
 // Put your answer below -------------------------
-
+var n;
+var callNTimes = function(callback) {
+  var range = Array.from(Array(n).keys());
+  range.forEach(callback);
+};
 
 // -----------------------------------------------
 
@@ -201,6 +206,19 @@ var callTenTimes = function(callback) {
 
 // HINT: "global scope"
 
+// var score = 0;
+//
+// var increaseScore = function() {
+//   score++;
+// };
+//
+// var decreaseScore = function() {
+//   score--;
+// };
+
+// Put your answer below -------------------------
+function totalScore()
+{
 var score = 0;
 
 var increaseScore = function() {
@@ -210,9 +228,7 @@ var increaseScore = function() {
 var decreaseScore = function() {
   score--;
 };
-
-// Put your answer below -------------------------
-
+}
 
 // -----------------------------------------------
 
@@ -225,14 +241,19 @@ var decreaseScore = function() {
 // twoPlusTwo gets set to `undefined`. Refactor
 // the function to make it work.
 
-var addNumbers = function(numberA, numberB) {
+// var addNumbers = function(numberA, numberB) {
+//   console.log(numberA + numberB);
+// };
+//
+// var twoPlusTwo = addNumbers(2,2);
+
+// Put your answer below -------------------------
+
+function addNumbers(numberA, numberB) {
   console.log(numberA + numberB);
 };
 
 var twoPlusTwo = addNumbers(2,2);
-
-// Put your answer below -------------------------
-
 
 // -----------------------------------------------
 
@@ -251,14 +272,21 @@ var twoPlusTwo = addNumbers(2,2);
 // Then refactor the function to have a default
 // amount of 1 if no param is given.
 
+// var speed = 0;
+//
+// var accelerate = function(amount) {
+//   speed += amount;
+// };
+
+// Put your answer below -------------------------
+// because amount does not have a value
+
 var speed = 0;
 
 var accelerate = function(amount) {
+  amount = 0
   speed += amount;
 };
-
-// Put your answer below -------------------------
-
 
 // -----------------------------------------------
 
