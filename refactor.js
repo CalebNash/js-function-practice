@@ -89,7 +89,7 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+// the answer is [c] because y has a one millisecond delay. 
 
 // -----------------------------------------------
 
