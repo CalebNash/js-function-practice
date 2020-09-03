@@ -57,7 +57,30 @@ function isVowel(char)
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
   // Function return translated string
+// function  rovarspraket()
+// {
+//
+// }
+var character = []
 
+function rovarspraket(string) {
+  var newStr = string.split("");
+
+  for (var i = 0; i < newStr.length; i++)
+  {
+    if (newStr[i].match(/[aeiou | AEIOU]/))
+    {
+      character.push(newStr[i]);
+    } else if (newStr[i].match(/\s/))
+    {
+      character.push(" ");
+    } else if (!newStr[i].match(/[aeiou]/))
+    {
+      character.push(newStr[i] + "o" + newStr[i]);
+    }
+  }
+ return character.join("");
+}
 
 
   // ---------------------
