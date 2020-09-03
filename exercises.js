@@ -87,7 +87,27 @@ function rovarspraket(string) {
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
 
+  function sum(num)
+  {
 
+    var num1 = 0;
+    for (var i = 0; i < num.length; i++)
+    {
+      num1 += num[i]
+    }
+    return num1;
+  }
+
+  function multiply(num2)
+  {
+
+    var num3 = 1;
+    for (var i = 0; i < num2.length; i++)
+    {
+      num3 *= num2[i]
+    }
+    return num3;
+  }
 
   // ---------------------
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
