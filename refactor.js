@@ -146,6 +146,20 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
+const colors = {
+  rojo: "#ff0000",
+  blanco:"#ffffff",
+  azul:"#0000ff",
+  verde:"#00ff00",
+  negro:"#000000"
+
+}
+
+function spanishColors(colorName)
+{
+  return colors[colorName];
+}
+
 
 // -----------------------------------------------
 
@@ -283,10 +297,10 @@ var twoPlusTwo = addNumbers(2,2);
 
 var speed = 0;
 
-var accelerate = function(amount) {
-  amount = 0
+var accelerate = function(amount = 1) {
   speed += amount;
 };
+
 
 // -----------------------------------------------
 
