@@ -71,10 +71,12 @@ function rovarspraket(string) {
     if (newStr[i].match(/[aeiou | AEIOU]/))
     {
       character.push(newStr[i]);
-    } else if (newStr[i].match(/\s/))
+    }
+    else if (newStr[i].match(/\s/))
     {
       character.push(" ");
-    } else if (!newStr[i].match(/[aeiou]/))
+    }
+    else if (!newStr[i].match(/[aeiou]/))
     {
       character.push(newStr[i] + "o" + newStr[i]);
     }
@@ -113,13 +115,8 @@ function rovarspraket(string) {
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
 
-function reverse(str) {
- var arr;
- arr = str.split("");
- arr = arr.reverse();
- str = arr.join("");
- return str;
-}
+
+var reverse = str => str.split('').reverse().join('');
 
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
